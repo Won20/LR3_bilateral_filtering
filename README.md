@@ -3,6 +3,7 @@
 # Задача:
 Учитывая размер изображения M × N, реализуйте и примените версию CUDA 9-точечного двустороннего фильтра и сохраните результат в выходное изображение. Пропущенные значения в граничных строках и столбцах необходимо брать из ближайших пикселей.
 - Входные данные: входное изображение в градациях серого в формате BMP, σ values;
+
 ![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/ea5f973b-6810-44d8-9e16-b34fae7ef3f4)
 
 - Выходные данные:
@@ -13,9 +14,11 @@
 # Реализация:
 Основные формулы, использованные в работе
 ![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/691f9e3a-44f0-4abe-aaf1-d00758b35498) - функция, вычисляющая новую интенсивность без нормализации клэффициентов, где
+
 ![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/2c7cf626-b9e4-446e-af76-142b930d0411)
 
 ![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/299d0d90-f030-4923-9627-3bb5446d1ed3) - коэффициент, зависящий от расстояния до центрального пикселя, где
+
 ![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/a16f75a9-9eaf-4e18-8db0-f9136df118fe)
 
 ![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/1134ff43-9f83-4af7-ac16-1d327712a124) - нормирующая константа для предотвращения увеличения интенсивности 
@@ -29,9 +32,9 @@
 
 
 # Результаты:
-CPU 133 на 200: ![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/9fc46681-e4c9-4532-b5d8-2c1475a39469)
+CPU 133 на 200:  ![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/9fc46681-e4c9-4532-b5d8-2c1475a39469)
 
-GPU 800 на 1200:![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/a7fd573f-fe18-4195-9271-889147982cc6)
+GPU 800 на 1200: ![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/a7fd573f-fe18-4195-9271-889147982cc6)
 
 В таблицах представлено время выполнения и ускорение (одной и той же картинки в различных разрешениях, при одинаковых значениях сигма):
 ![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/2dbe9d7a-af13-46b0-9ea9-6fa6dbd5764f) 
