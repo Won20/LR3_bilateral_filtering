@@ -6,6 +6,9 @@
 
 ![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/ea5f973b-6810-44d8-9e16-b34fae7ef3f4)
 
+![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/92739b49-650d-45f0-9ad8-4a1919aa7287)
+
+
 - Выходные данные:
 - -время обработки изображения с помощью процессора;
 - -время обработки изображения с использованием графического процессора;
@@ -34,9 +37,16 @@
 # Результаты:
 CPU 133 на 200:  ![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/9fc46681-e4c9-4532-b5d8-2c1475a39469)
 
+![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/5c935239-2aa7-4c90-b051-73fefcfb2a69)
+
+![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/9fdd55e6-fa67-4b51-8d24-29751512d623)
+
+
+
 GPU 800 на 1200: ![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/a7fd573f-fe18-4195-9271-889147982cc6)
 
 В таблицах представлено время выполнения и ускорение (одной и той же картинки в различных разрешениях, при одинаковых значениях сигма):
+
 ![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/2dbe9d7a-af13-46b0-9ea9-6fa6dbd5764f) 
 ![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/80dc054d-9055-4697-8c13-08daede921a3)
 
