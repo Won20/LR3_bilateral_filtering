@@ -4,8 +4,6 @@
 Учитывая размер изображения M × N, реализуйте и примените версию CUDA 9-точечного двустороннего фильтра и сохраните результат в выходное изображение. Пропущенные значения в граничных строках и столбцах необходимо брать из ближайших пикселей.
 - Входные данные: входное изображение в градациях серого в формате BMP, σ values;
 
-![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/ea5f973b-6810-44d8-9e16-b34fae7ef3f4)
-
 ![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/92739b49-650d-45f0-9ad8-4a1919aa7287)
 
 
@@ -35,15 +33,13 @@
 
 
 # Результаты:
-CPU 133 на 200:  ![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/9fc46681-e4c9-4532-b5d8-2c1475a39469)
+CPU 800 на 1200: 
 
 ![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/5c935239-2aa7-4c90-b051-73fefcfb2a69)
 
+
+GPU 800 на 1200: 
 ![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/9fdd55e6-fa67-4b51-8d24-29751512d623)
-
-
-
-GPU 800 на 1200: ![image](https://github.com/Won20/LR3_bilateral_filtering/assets/102918065/a7fd573f-fe18-4195-9271-889147982cc6)
 
 В таблицах представлено время выполнения и ускорение (одной и той же картинки в различных разрешениях, при одинаковых значениях сигма):
 
